@@ -1,0 +1,148 @@
+{
+  "resultId": 1,
+  "resultMsg": "成功",
+  "status": "success",
+  "data": {
+    "roomtypeList": [
+      {
+        "roomtypeId": "0",
+        "roomtypeName": "单间",
+        "roomService": "7,8#moorgen#44",
+        "price": "888",
+        "realPrice": "8",
+        "detail": "11",
+        "thumbnail": "room1.png",
+        "picturePath": "room1.png,room2.jpg",
+        "cancelRule": "22",
+        "availableCount": 8,
+        "max": -1,
+        "services": [
+          {
+            "id": 7,
+            "serviceName": "微信点餐",
+            "serviceType": 1,
+            "icon": "wechat",
+            "hasService": false
+          },
+          {
+            "id": 8,
+            "serviceName": "其他",
+            "serviceType": 1,
+            "icon": "other",
+            "hasService": false,
+            "other": "44"
+          }
+        ],
+        "breakfast": 2,
+        "roomSize": "11",
+        "bedType": "1.2舒适床",
+        "bedCount": 1,
+        "hasWindows": 1,
+        "floor": "1-3层",
+        "direction": "东",
+        "hasSmoke": "0",
+        "note": "33",
+        "isShow": 1,
+        "hasRoom": false,
+        "roomParams": [
+          "11㎡",
+          "1.2舒适床",
+          "1张床",
+          "有窗",
+          "1-3层",
+          "朝东",
+          "不可吸烟"
+        ],
+        "from": 1,
+        "duration": 22,
+        "charge": 50
+      },
+      {
+        "roomtypeId": "1",
+        "roomtypeName": "SR",
+        "roomService": "8#moorgen#其他房间类型",
+        "price": "888",
+        "realPrice": "800",
+        "detail": "大床房",
+        "thumbnail": "room1.png",
+        "picturePath": "room1.png,room2.jpg",
+        "availableCount": 8,
+        "max": -1,
+        "services": [],
+        "breakfast": 1,
+        "roomSize": "55",
+        "bedType": "1.2舒适床",
+        "bedCount": 1,
+        "hasWindows": 1,
+        "floor": "1-3层",
+        "direction": "南",
+        "hasSmoke": "1",
+        "note": "不给带宠物",
+        "isShow": 1,
+        "hasRoom": false,
+        "roomParams": [
+          "55㎡",
+          "1.2舒适床",
+          "1张床",
+          "有窗",
+          "1-3层",
+          "朝南",
+          "不可吸烟"
+        ],
+        "from": 1,
+        "duration": 3,
+        "charge": 50
+      },
+      {
+        "roomtypeId": "48",
+        "roomtypeName": "SD",
+        "roomService": "4,5",
+        "price": "888",
+        "realPrice": "85",
+        "detail": "好房间不等人",
+        "thumbnail": "room1.png",
+        "picturePath": "room1.png,room2.jpg",
+        "availableCount": 8,
+        "services": [
+          {
+            "id": 5,
+            "serviceName": "电动窗帘",
+            "serviceType": 1,
+            "icon": "curtain",
+            "hasService": false
+          },
+          {
+            "id": 4,
+            "serviceName": "独立卫浴",
+            "serviceType": 1,
+            "icon": "bathroom",
+            "hasService": false
+          }
+        ],
+        "breakfast": 2,
+        "roomSize": "55",
+        "bedType": "1.8大床",
+        "bedCount": 1,
+        "hasWindows": 1,
+        "floor": "1-3层",
+        "direction": "东",
+        "hasSmoke": "1",
+        "note": "不能带宠物",
+        "isShow": 1,
+        "hasRoom": true,
+        "roomParams": [
+          "55㎡",
+          "1.8大床",
+          "1张床",
+          "有窗",
+          "1-3层",
+          "朝东",
+          "不可吸烟"
+        ],
+        "from": 1,
+        "duration": 2,
+        "charge": 2
+      }
+    ]
+  }
+}

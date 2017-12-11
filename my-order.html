@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的订单</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <script src="js/common.js"></script>
+    <script src="js/url.js"></script>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/my-order.css">
+
+</head>
+<body>
+<div class="wrapper">
+    <div class="order-tab-head">
+        <div><p class="selected" id="stayorder" onclick="changeTab(0)">待入住</p></div>
+        <div><p id="allorder" onclick="changeTab(1)">全部</p></div>
+    </div>
+    <div class="order-tab-content">
+        <!--待入住订单-->
+        <div id="stay-in-orders" class="show">
+            <div>
+                <div class="order-list book-suc" onclick="jumpDetail(this)">
+                    <div>
+                        <div class="book-suc-list">
+                            <span></span>
+                            <p>预订成功</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="order-list-info">
+                            <h4 class="orderNo">2017112911258</h4>
+                            <div>
+                                <span class="order-room-type">
+                                    单间 x 1间
+                                    <span class="order-room-price">￥2</span>
+                                </span>
+                            </div>
+                            <div>
+                                <span>2017-12-04</span>入住，
+                                <span>2017-12-10</span>退房
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-list book-suc" onclick="jumpDetail(this)">
+                    <div>
+                        <div class="book-suc-list">
+                            <span></span>
+                            <p>预订成功</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="order-list-info">
+                            <h4 class="orderNo">2017112911258</h4>
+                            <div>
+                                <span class="order-room-type">
+                                    单间 x 1间
+                                    <span class="order-room-price">￥2</span>
+                                </span>
+                            </div>
+                            <div>
+                                <span>2017-12-04</span>入住，
+                                <span>2017-12-10</span>退房
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-list book-suc" onclick="jumpDetail(this)">
+                    <div>
+                        <div class="book-suc-list">
+                            <span></span>
+                            <p>预订成功</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="order-list-info">
+                            <h4 class="orderNo">2017112911258</h4>
+                            <div>
+                                <span class="order-room-type">
+                                    单间 x 1间
+                                    <span class="order-room-price">￥2</span>
+                                </span>
+                            </div>
+                            <div>
+                                <span>2017-12-04</span>入住，
+                                <span>2017-12-10</span>退房
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <!--全部订单-->
+        <div id="total-orders">
+            <div>
+                <div class="order-list book-suc" onclick="jumpDetail(this)">
+                    <div>
+                        <div class="book-suc-list">
+                            <span></span>
+                            <p>预订成功</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="order-list-info">
+                            <h4 class="orderNo">2017112911258</h4>
+                            <div>
+                                <span class="order-room-type">
+                                    单间 x 1间
+                                    <span class="order-room-price">￥2</span>
+                                </span>
+                            </div>
+                            <div>
+                                <span>2017-12-04</span>入住，
+                                <span>2017-12-10</span>退房
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="order-list book-cal" onclick="jumpDetail(this)">
+                    <div>
+                        <div class="book-cancel-list">
+                            <span></span>
+                            <p>已取消</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="order-list-info order-cancel-list">
+                            <h4 class="orderNo">2017112911258</h4>
+                            <div>
+                                <span class="order-room-type">
+                                    单间 x 1间
+                                    <span class="order-room-price">￥2</span>
+                                </span>
+                            </div>
+                            <div>
+                                <span>2017-12-04</span>入住，
+                                <span>2017-12-10</span>退房
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="order-list book-used" onclick="jumpDetail(this)">
+                    <div>
+                        <div class="book-used-list">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="order-list-info order-used-list">
+                            <h4 class="orderNo">2017112911258</h4>
+                            <div>
+                                <span class="order-room-type">
+                                    单间 x 1间
+                                    <span class="order-room-price">￥2</span>
+                                </span>
+                            </div>
+                            <div>
+                                <span>2017-12-04</span>入住，
+                                <span>2017-12-10</span>退房
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/my-order.js"></script>
+</html>

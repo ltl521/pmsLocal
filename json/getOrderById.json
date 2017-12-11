@@ -1,0 +1,24 @@
+{
+  "resultId": 1,
+  "resultMsg": "成功",
+  "status": "success",
+  "data": {
+    "order": {
+      "id": "2017112911258",
+      "status": 1,
+      "statusName": "已预订",
+      "payStatus": 0,
+      "contactName": "罗进学",
+      "contactPhone": "18012354643",
+      "roomType": "0",
+      "roomTypeName": "单间",
+      "price": "2",
+      "orderCreateTime": "2017-12-04 15:10:27",
+      "checkinTime": "2017-12-04 12:00:00",
+      "checkoutTime": "2017-12-10 12:00:00",
+      "remark": "",
+      "days": 6,
+      "canCheckIn": false
+    }
+  }
+}

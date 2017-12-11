@@ -1,0 +1,154 @@
+.wrapper{
+    /*padding-top:2.2222222222222223rem;*/
+}
+.order-tab-head{
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    z-index:9999999999;
+    height:2.2222222222222223rem;
+    line-height:2.2222222222222223rem;
+    font-size: 0.7111111111111111rem;
+    color: #DBDBDB;
+    border-bottom:1px solid #353535;
+    background:#151515;
+}
+.order-tab-head>div{
+    float:left;
+    width:50%;
+    height:2.2222222222222223rem;
+}
+.order-tab-head>div>p{
+    width:3.022222222222222rem;
+    height:2.2222222222222223rem;
+    margin:0 auto;
+    text-align:center;
+    cursor:pointer;
+}
+.order-tab-head>div>p.selected{
+    color: #2890E0;
+    border-bottom:2px solid #2890E0;
+}
+/*订单列表*/
+.order-tab-content{
+    width:100%;
+    padding:0 0.8888888888888888rem ;
+    margin-top:2.4rem;
+}
+.order-tab-content>div{
+    display:none;
+    height:100%;
+    padding-bottom:1.3333333333333333rem;
+}
+.order-tab-content .show{
+    display:block;
+}
+.order-list{
+    width:100%;
+    height:6.222222222222222rem;
+    background: #272727;
+    border-radius: 12px;
+    margin-top:0.4444444444444444rem;
+    cursor:pointer;
+}
+.order-list:active{
+    border:2px solid #2890E0;
+}
+/*订单当前状态图标*/
+.order-list>div:nth-child(1){
+    float:left;
+    width:27%;
+    height:6.222222222222222rem;
+    text-align:center;
+    position:relative;
+}
+/*d订单图标*/
+.book-suc-list,.book-cancel-list{
+    position:absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+/*预定成功图标*/
+.book-suc-list>span,.book-cancel-list>span{
+    display:block;
+    width:2.4444444444444446rem;
+    height:2.4444444444444446rem;
+    background: url(../img/booking-success2.png) no-repeat center;
+    background-size:100%;
+    margin:0 auto;
+    margin-bottom:0.3111111111111111rem;
+}
+.book-suc-list>p,.book-cancel-list>p{
+    width:2.6666666666666665rem;
+    color: #85B322;
+    font-size: 0.6222222222222222rem;
+}
+/*订单信息*/
+.order-list>div:nth-child(2){
+    float:left;
+    width:73%;
+    height:6.222222222222222rem;
+    padding-right:0.6666666666666666rem;
+    padding-top:0.5777777777777777rem;
+}
+.order-list-info>h4{
+    text-align:right;
+    font-size: 0.8888888888888888rem;
+    color: #85B322;
+    height:2.577777777777778rem;
+    width:100%;
+    word-wrap: normal;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    font-weight: normal;
+}
+.order-list-info>div{
+    color: #DBDBDB;
+    line-height:0.8888888888888888rem;
+}
+.order-room-price{
+    margin-left:0.6666666666666666rem;
+}
+/*已取消订单图标*/
+.book-cancel-list>span{
+    background: url(../img/cancel-order.png) no-repeat center;
+    background-size:100%;
+}
+.book-cancel-list>p,.order-cancel-list>h4{
+    color: #606060;
+}
+.order-cancel-list>div{
+    color: #989898;
+}
+/*已使用订单图标*/
+.book-used-list>span{
+    display: block;
+    width:4.533333333333333rem;
+    height:4.533333333333333rem;
+    background:url(../img/used-order.png) no-repeat -0.6222222222222222rem -1.1111111111111112rem;
+    background-size:100%;
+}
+.order-used-list>h4{
+    color:#fff;
+}
+
+
+
+/*加载更多按钮*/
+.stay-more,.all-more{
+    display:block;
+    margin:0 auto;
+    margin-top:0.5rem;
+    width:40%;
+    height:1.2444444444444445rem;
+    border:1px solid  #979797;
+    color:#dbdbdb;
+    background:#151515;
+    border-radius:14px;
+}

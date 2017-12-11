@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>迪士尼大酒店</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="format-detection" content="telephone=yes"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <script src="js/common.js"></script>
+    <script src="js/url.js"></script>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="date/date.css">
+</head>
+<body>
+<div class="wrapper">
+    <!--酒店图片-->
+    <div class="hotel-pic-box">
+        <div class="swiper-container">
+            <div class= "swiper-wrapper hotelswip"></div>
+            <div class="pic-num"><span></span>张</div>
+        </div>
+    </div>
+
+    <!--酒店地址&电话-->
+    <div class="hotel-map">
+        <div class="map-icon left">
+            <span></span>
+            <!--酒店地址-->
+            <a class="map-address"></a>
+        </div>
+        <!--调用地图-->
+        <div class="map" id="map" style="display:none"></div>
+        <!--电话-->
+        <a class="phone-icon right"></a>
+    </div>
+    <!--酒店介绍-->
+    <div class="hotel-info-box">
+        <div class="hotel-info left">
+            <!--酒店名称-->
+            <h4 class="hotel-info-name"></h4>
+            <!--酒店描述-->
+            <p class="hotel-info-txt"></p>
+        </div>
+        <div class="hotel-info-btn">酒店介绍 <span></span></div>
+    </div>
+
+
+    <!--酒店房型介绍-->
+    <div class="room-type-box">
+        <!--入住时间-->
+        <div class="select-time">
+            <div class="checkin-time left">
+                入住
+                <span id="entertime"></span>
+                <span class="entertime none"></span>
+                <input type="text" class="input-enter none">
+                <a></a>
+            </div>
+            <div class="checkout-time left">
+                退房
+                <span id="leavetime"></span>
+                <span class="leavetime none"></span>
+                <input type="text" class="input-leave none">
+                <a></a>
+            </div>
+            <div class="night right">住 1 晚</div>
+        </div>
+        <!--房型介绍列表-->
+        <!--可预订-->
+        <!--已满房-->
+    </div>
+
+    <!--房型信息-->
+    <div class="room-detail-box" style="display:none">
+        <div class="room-detail">
+            <div class="room-detail-type-name" style="display:none"></div>
+            <div class="room-detail-price" style="display:none"></div>
+            <div class="scroll">
+                <!--房间图片轮播-->
+                <div class="swiper-container roomswip">
+                    <div class="swiper-wrapper ">
+                        <img src="img/room1.png" alt="">
+                        <img src="img/room2.jpg" alt="">
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <!--房间介绍-->
+                <div class="room-intro">
+                    <div class="room-intro-row">
+                        <div>11㎡</div>
+                        <div>1.2舒适床</div>
+                        <div>1张床</div>
+                        <div>有窗</div>
+                        <div>1-3层</div>
+                        <div>朝东</div>
+                        <div>不可吸烟</div>
+                    </div>
+                </div>
+                <!--房间标签-->
+                <ul class="room-label">
+                    <li>电动窗帘</li>
+                    <li>独立卫浴</li>
+                    <li>独立卫浴</li>
+                </ul>
+                <!--房间描述-->
+                <div class="room-description">
+                    <h4>房间描述</h4>
+                    <p class="room-dscp-txt">好房间不等人</p>
+                </div>
+                <div class="room-description room-cancel-rule">
+                    <h4>取消规则</h4>
+                    <p class="room-cancel-txt">取消规则</p>
+                </div>
+            </div>
+            <!--固定按钮-->
+            <div class="room-detail-btn">
+                <div class="room-detail-cancel left">
+                    <button type="button">取消</button>
+                </div>
+                <div class="room-detail-sure left">
+                    <button type="button">预定</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+
+
+</body>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/swiper.js"></script>
+<script src="date/date.js"></script>
+
+<script>
+//    swipper
+var swiper = new Swiper('.swiper-container', {
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'fraction'
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+    },
+    observer:true
+});
+
+
+
+
+//入住&离店时间选择
+$('.select-time').hotelDate();
+
+</script>
+<script src="js/index.js"></script>
+
+</html>

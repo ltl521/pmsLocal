@@ -1,0 +1,201 @@
+.wrapper>div{
+    width:100%;
+    padding:0.5333333333333333rem 0.8888888888888888rem;
+    background: #272727;
+    margin-bottom:0.4444444444444444rem;
+}
+/*预定订单状态*/
+.wrapper>div:nth-child(1)>h3{
+    height:1.1111111111111112rem;
+    line-height:1.1111111111111112rem;
+    font-size: 0.8rem;
+    color: #8BA600;
+    font-weight: normal;
+}
+.wrapper>div:nth-child(1)>h3.order-price{
+    font-size: 0.8888888888888888rem;
+    color: #EA4D23;
+}
+/*订单已取消*/
+.wrapper>div:nth-child(1)>h3.order-canceled{
+    color: #606060;
+}
+/*订单已使用*/
+.wrapper>div:nth-child(1)>h3.order-used{
+    color: #EA4D23;
+}
+.wrapper>div:nth-child(1)>h3.order-used+h3.order-price{
+    color: #DBDBDB;
+}
+.order-num{
+    clear:both;
+    height:1.5rem;
+    line-height: 1.5rem;
+}
+.order-num>span{
+    float:left;
+}
+.order-num>span.order-id{
+    width:70%;
+    overflow:hidden;
+    text-overflow: ellipsis;
+}
+.money-back{
+    width:100%;
+    text-align:right;
+    color: #EA4D23;
+}
+/*房型&住店时间*/
+.wrapper>div:nth-child(2){
+    text-align:center;
+}
+.wrapper>div:nth-child(2)>h3{
+    height:2.577777777777778rem;
+    line-height: 2.577777777777778rem;
+    font-size: 0.8888888888888888rem;
+    color: #DBDBDB;
+}
+.wrapper>div:nth-child(2)>p{
+    height:1.1555555555555554rem;
+    line-height: 1.1555555555555554rem;
+    margin-bottom:0.17777777777777778rem;
+    font-size: 0.8rem;
+    color: #DBDBDB;
+}
+/*预定信息*/
+.wrapper>div:nth-child(3){
+    overflow:hidden;
+}
+
+.wrapper>div:nth-child(3)>p{
+    float: left;
+    width:25%;
+    font-size: 0.6222222222222222rem;
+}
+.wrapper>div:nth-child(3)>div{
+    float: right;
+    width:75%;
+    font-size: 0.6222222222222222rem;
+    color: #DBDBDB;
+}
+.wrapper>div:nth-child(3)>div>p{
+    line-height: 1.1111111111111112rem;
+}
+.order-phone{
+    margin-left:0.2222222222222222rem;
+}
+.wrapper>div:nth-child(3)>div>span{
+    float:left;
+    line-height: 0.8888888888888888rem;
+}
+.wrapper>div:nth-child(3)>div>span.order-remark{
+    margin-left:0.2222222222222222rem;
+    width:8rem;
+}
+/*联系酒店按钮&取消订单按钮*/
+.call-hotel-btn,.cancel-order-btn,.again-order-btn{
+    width:14.222222222222221rem;
+    height:2rem;
+    border: 1px solid #979797;
+    border-radius: 4px;
+    background: #151515;
+    font-size: 0.8rem;
+    color: #DBDBDB;
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+    margin-top:1.0666666666666667rem;
+}
+.call-hotel-btn{
+    text-align:center;
+    padding-top:0.35rem;
+}
+.cancel-order-btn{
+    background: #EA4D23;
+    border:none;
+}
+.again-order-btn{
+    background: #2890E0;
+    border:none;
+}
+/*取消订单弹框*/
+.wrapper>.cancel-order-box,.wrapper>.order-canceled-box{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background:rgba(21,21,21,0.8);
+}
+.wrapper>.cancel-order-box>div,.wrapper>.order-canceled-box>div{
+    width:11.555555555555555rem;
+    height:7.111111111111111rem;
+    background: #fff;
+    border-radius: 14px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+.wrapper>.cancel-order-box>div>div:nth-child(1){
+    height:5.022222222222222rem;
+    border-bottom:1px solid #ddd;
+    text-align: center;
+}
+.wrapper>.cancel-order-box>div>div:nth-child(1)>h4{
+    height:2.6666666666666665rem;
+    line-height: 2.6666666666666665rem;
+    font-size: 0.8rem;
+    color: #151515;
+}
+.wrapper>.cancel-order-box>div>div:nth-child(1)>p{
+    font-size: 0.7111111111111111rem;
+    color: #151515;
+}
+.wrapper>.cancel-order-box>div>div:nth-child(2),.wrapper>.cancel-order-box>div>div:nth-child(3){
+    float:left;
+    width:50%;
+    height:2.088888888888889rem;
+    position: relative;
+}
+.wrapper>.cancel-order-box>div>div:nth-child(2){
+    border-right:1px solid #ddd;
+}
+.cancel-order-cancel,.cancel-order-sure{
+    padding:0.4444444444444444rem;
+    position:absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    font-size: 0.8rem;
+    color: #006ABC;
+    letter-spacing: 0.028444444444444446rem;
+    cursor:pointer;
+}
+/*订单已取消弹框*/
+.wrapper>.order-canceled-box>div{
+    height:4.7555555555555555rem;
+    text-align:center;
+    position:relative;
+}
+.wrapper>.order-canceled-box>div>h3{
+    height:2.6666666666666665rem;
+    line-height:3.111111111111111rem;
+    font-size: 0.8rem;
+    color: #151515;
+}
+.wrapper>.order-canceled-box>div>p{
+    font-size: 0.5333333333333333rem;
+    color: #EA4D23;
+}
+
+
+

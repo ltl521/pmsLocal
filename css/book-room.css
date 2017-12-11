@@ -1,0 +1,285 @@
+body{
+    background:#000;
+}
+.wrapper{
+    padding-bottom:3rem;
+}
+/*预定房型与时间*/
+.book-room-type{
+    width:100%;
+    height:4rem;
+    background: #151515;
+    padding:0.4444444444444444rem 0.8888888888888888rem 0 0.8888888888888888rem;
+}
+.book-room-type>img{
+    width:1.1111111111111112rem;
+    height:1.1111111111111112rem;
+    margin-top:0.4444444444444444rem;
+    margin-right:0.2222222222222222rem;
+}
+.book-room-type-name{
+    display:inline-block;
+    height:2rem;
+    line-height:2rem;
+    font-size: 0.7111111111111111rem;
+    color: #F2B011;
+}
+/*住店时间*/
+.select-time{
+    width:100%;
+    font-size: 0.6222222222222222rem;
+}
+.checkin-time,.checkout-time{
+    width:5.2rem;
+    margin-right:0.8rem;
+    font-size:0.6222222222222222rem;
+}
+#entertime,#leavetime{
+    font-size: 0.7111111111111111rem;
+    color: #fff;
+}
+
+.alter-book-time{
+    float:right;
+    font-size: 0.6222222222222222rem;
+    color: #85B322;
+    cursor:pointer;
+}
+.alter-book-time>span{
+    display: inline-block;
+    width:0.35555555555555557rem;
+    height:0.35555555555555557rem;
+    background:url(../img/alter-detail.png) no-repeat center;
+    margin-left:0.2rem;
+}
+/*预定信息列表*/
+.book-info{
+    width:100%;
+    height:2.4444444444444446rem;
+    line-height:2.4444444444444446rem;
+    padding:0 0.8888888888888888rem;
+    border-bottom: 1px solid #353535;
+    font-size: 0.7111111111111111rem;
+}
+/*房间数*/
+.room-num{
+    height:3.111111111111111rem;
+    line-height:3.8222222222222224rem;
+}
+.room-num>span{
+    margin-left:1.3333333333333333rem;
+    font-size: 0.8rem;
+    color: #FFFFFF;
+}
+.room-num>a{
+    float: right;
+    width:0.4rem;
+    height:0.35555555555555557rem;
+    background: url(../img/drop.png) no-repeat center;
+    margin-top:1.7777777777777777rem;
+    cursor:pointer;
+}
+/*房间数提示框*/
+.room-num-notes-box{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background:rgba(21,21,21,.8);
+}
+.room-num-notes-box>div{
+    width:11.555555555555555rem;
+    height:7.111111111111111rem;
+    position:absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    background: #fff;
+    border-radius: 14px;
+    text-align: center;
+    font-size: 14px;
+    color: #151515;
+}
+.room-num-notes-box>div>h3{
+    font-size: 0.8rem;
+    line-height:3.2rem;
+    height:2.6666666666666665rem;
+}
+.room-num-notes-box>div>p{
+    height:2.2222222222222223rem;
+}
+.room-num-notes{
+    height:1.9555555555555555rem;
+    line-height:1.9555555555555555rem;
+    border-top:1px solid #ddd;
+    font-size: 0.8rem;
+    color: #006ABC;
+    letter-spacing: 0.028444444444444446rem;
+    cursor:pointer;
+}
+
+
+.book-info>input{
+    width:10.88888888888889rem;
+    height:2rem;
+    line-height:2rem;
+    border:none;
+    background:#000;
+    margin-left:0.8888888888888888rem;
+    color:#fff;
+    font-size: 0.8rem;
+    border-radius: 4px;
+    padding-left:0.4rem;
+}
+.book-info>.book-remark{
+    margin-left:1.5555555555555556rem;
+}
+.book-info>input:focus{
+    background: #FAFAFA;
+    color: #4A4A4A;
+}
+
+/*支付方式*/
+.apply-way{
+    width:100%;
+    border-bottom: 1px solid #353535;
+    padding:0.8rem 0.8888888888888888rem 0.4444444444444444rem 0.8888888888888888rem;
+    overflow:hidden;
+    background:#000;
+}
+.apply-way>p{
+    font-size: 0.7111111111111111rem;
+    color: #353535;
+    height:2.2222222222222223rem;
+    line-height:2.2222222222222223rem;
+}
+.apply-way-list{
+    width:100%;
+    height:2.2222222222222223rem;
+}
+.apply-way-list>img{
+    float:left;
+    width:1.0666666666666667rem;
+    height:0.9333333333333333rem;
+    margin-right:0.5777777777777777rem;
+    margin-top:0.6666666666666666rem;
+}
+.apply-way-list>div.apply-ways{
+    float:left;
+    height:2.2222222222222223rem;
+}
+.apply-way-list>div>p:nth-child(1){
+    height:1.3333333333333333rem;
+    line-height:1.3333333333333333rem;
+    font-size: 0.7111111111111111rem;
+    color: #fff;
+}
+.apply-way-list>div>p:nth-child(2){
+    height:0.8888888888888888rem;
+    line-height:0.8888888888888888rem;
+}
+.apply-ways>div{
+    line-height:2.2222222222222223rem;
+    font-size: 0.7111111111111111rem;
+    color: #fff;
+}
+.apply-way-list>span{
+    float:right;
+    width:0.8888888888888888rem;
+    height:0.8888888888888888rem;
+    background:url(../img/apply.png) no-repeat;
+    background-size:100%;
+    margin-top:0.6666666666666666rem;
+}
+.apply-way-list>span.apply-click{
+    background:url(../img/apply-clicked.png) no-repeat;
+    background-size:100%;
+}
+
+/*预定须知*/
+.book-notes{
+    width:100%;
+    color: #606060;
+    padding:0.35555555555555557rem 0.8888888888888888rem 0.13333333333333333rem;
+    background:#000;
+}
+.book-notes>p:nth-child(1){
+    font-size: 0.6222222222222222rem;
+    height:1.7777777777777777rem;
+    line-height:1.7777777777777777rem;
+}
+/*支付订单*/
+.apply{
+    width:100%;
+    height:2.2222222222222223rem;
+    line-height:2.2222222222222223rem;
+    position:fixed;
+    bottom:0;
+    left:0;
+    right:0;
+}
+.book-price{
+    width:55%;
+    background: #232323;
+    text-align:right;
+    padding-right:0.8888888888888888rem;
+    font-size: 0.9777777777777777rem;
+    color: #EA4D23;
+}
+/*去支付*/
+.go-apply{
+    width:45%;
+    background: #2890E0;
+    text-align:center;
+    font-size: 0.7111111111111111rem;
+    color: #fff;
+    cursor:pointer;
+}
+
+
+/*已满房提示框*/
+.full-room-box,.phone-note-box{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background:rgba(21,21,21,.8);
+}
+.full-room-box>div,.phone-note-box>div{
+    width:11.555555555555555rem;
+    height:4.7555555555555555rem;
+    background: #fff;
+    border-radius: 14px;
+    text-align: center;
+    position:absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    font-size: 0.8rem;
+    color: #151515;
+    line-height: 1.2444444444444445rem;
+    font-weight: 600;
+}
+.full-room-box>div{
+    padding-top:1.0rem;
+}
+
+/*手机格式提示框*/
+.phone-note-box>div{
+    height:3rem;
+    padding-top:0.8rem;
+    font-weight:normal;
+}
+
+
+

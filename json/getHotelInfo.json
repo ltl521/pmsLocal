@@ -1,0 +1,252 @@
+{
+  "resultId": 1,
+  "resultMsg": "成功",
+  "status": "success",
+  "data": {
+    "hotel": {
+      "hotelId": "4ca41b6d6f6244e8afe85ceeab2202ad",
+      "hotelName": "moorgen酒店",
+      "hotelPhone": "025-88888888",
+      "level": -1,
+      "province": "上海市",
+      "city": "上海城区",
+      "county": "普陀区",
+      "road": "真北路",
+      "picturePath": "hotel1.jpg,hotel2.jpg",
+      "size": "1111",
+      "createTime": "2017-12-14",
+      "detail": "大酒店，奢华",
+      "roomCount": 66
+    },
+    "services": {
+      "service5": [
+        {
+          "id": 40,
+          "serviceName": "其他",
+          "remark": "其他",
+          "serviceType": 5,
+          "icon": "other",
+          "hasService": false,
+          "other": "有线电视"
+        },
+        {
+          "id": 10,
+          "serviceName": "有无线上网的公共区域",
+          "serviceType": 2,
+          "icon": "region",
+          "hasService": false
+        },
+        {
+          "id": 11,
+          "serviceName": "中餐厅",
+          "serviceType": 2,
+          "icon": "dining1",
+          "hasService": false
+        },
+        {
+          "id": 37,
+          "serviceName": "其他",
+          "serviceType": 2,
+          "icon": "other",
+          "hasService": false,
+          "other": "摩拜停车场"
+        },
+        {
+          "id": 10,
+          "serviceName": "有无线上网的公共区域",
+          "serviceType": 2,
+          "icon": "region",
+          "hasService": false
+        },
+        {
+          "id": 11,
+          "serviceName": "中餐厅",
+          "serviceType": 2,
+          "icon": "dining1",
+          "hasService": false
+        },
+        {
+          "id": 37,
+          "serviceName": "其他",
+          "serviceType": 2,
+          "icon": "other",
+          "hasService": false,
+          "other": "摩拜停车场"
+        }
+      ],
+      "service2": [
+        {
+          "id": 10,
+          "serviceName": "有无线上网的公共区域",
+          "serviceType": 2,
+          "icon": "region",
+          "hasService": false
+        },
+        {
+          "id": 11,
+          "serviceName": "中餐厅",
+          "serviceType": 2,
+          "icon": "dining1",
+          "hasService": false
+        },
+        {
+          "id": 37,
+          "serviceName": "其他",
+          "serviceType": 2,
+          "icon": "other",
+          "hasService": false,
+          "other": "摩拜停车场"
+        },
+        {
+          "id": 10,
+          "serviceName": "有无线上网的公共区域",
+          "serviceType": 2,
+          "icon": "region",
+          "hasService": false
+        },
+        {
+          "id": 11,
+          "serviceName": "中餐厅",
+          "serviceType": 2,
+          "icon": "dining1",
+          "hasService": false
+        },
+        {
+          "id": 37,
+          "serviceName": "其他",
+          "serviceType": 2,
+          "icon": "other",
+          "hasService": false,
+          "other": "摩拜停车场"
+        }
+      ],
+      "service4": [
+        {
+          "id": 10,
+          "serviceName": "有无线上网的公共区域",
+          "serviceType": 2,
+          "icon": "region",
+          "hasService": false
+        },
+        {
+          "id": 11,
+          "serviceName": "中餐厅",
+          "serviceType": 2,
+          "icon": "dining1",
+          "hasService": false
+        },
+        {
+          "id": 37,
+          "serviceName": "其他",
+          "serviceType": 2,
+          "icon": "other",
+          "hasService": false,
+          "other": "摩拜停车场"
+        },
+        {
+          "id": 10,
+          "serviceName": "有无线上网的公共区域",
+          "serviceType": 2,
+          "icon": "region",
+          "hasService": false
+        },
+        {
+          "id": 11,
+          "serviceName": "中餐厅",
+          "serviceType": 2,
+          "icon": "dining1",
+          "hasService": false
+        },
+        {
+          "id": 37,
+          "serviceName": "其他",
+          "serviceType": 2,
+          "icon": "other",
+          "hasService": false,
+          "other": "摩拜停车场"
+        }
+      ],
+      "service3": [
+        {
+          "id": 38,
+          "serviceName": "其他",
+          "serviceType": 3,
+          "icon": "other",
+          "hasService": false,
+          "other": "老年篮球场"
+        },
+        {
+          "id": 10,
+          "serviceName": "有无线上网的公共区域",
+          "serviceType": 2,
+          "icon": "region",
+          "hasService": false
+        },
+        {
+          "id": 11,
+          "serviceName": "中餐厅",
+          "serviceType": 2,
+          "icon": "dining1",
+          "hasService": false
+        },
+        {
+          "id": 37,
+          "serviceName": "其他",
+          "serviceType": 2,
+          "icon": "other",
+          "hasService": false,
+          "other": "摩拜停车场"
+        },
+        {
+          "id": 10,
+          "serviceName": "有无线上网的公共区域",
+          "serviceType": 2,
+          "icon": "region",
+          "hasService": false
+        },
+        {
+          "id": 11,
+          "serviceName": "中餐厅",
+          "serviceType": 2,
+          "icon": "dining1",
+          "hasService": false
+        },
+        {
+          "id": 37,
+          "serviceName": "其他",
+          "serviceType": 2,
+          "icon": "other",
+          "hasService": false,
+          "other": "摩拜停车场"
+        }
+      ]
+    },
+    "policy": [
+      {
+        "id": 1,
+        "name": "入住时间",
+        "content": "18:05:00"
+      },
+      {
+        "id": 2,
+        "name": "离店时间",
+        "content": "18:05:00"
+      },
+      {
+        "id": 3,
+        "name": "儿童政策",
+        "content": "小孩1.6以下免费提供婴儿床"
+      },
+      {
+        "id": 4,
+        "name": "膳食政策",
+        "content": "55555"
+      },
+      {
+        "id": 5,
+        "name": "宠物",
+        "content": "宠物不准离开房间"
+      }
+    ]
+  }
+}

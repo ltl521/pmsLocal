@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>酒店名称</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <script src="js/common.js"></script>
+    <script src="js/url.js"></script>
+    <link rel="stylesheet" href="css/base.css">
+    <style>
+        .wrapper{
+            text-align:center;
+            font-size: 0.8rem;
+            color: #DBDBDB;
+        }
+        img{
+            width:2.6666666666666665rem;
+            height:2.6666666666666665rem;
+            margin-bottom:0.6666666666666666rem;
+            margin-top:2.6666666666666665rem;
+        }
+        button{
+            width:14.222222222222221rem;
+            height:2rem;
+            background: #2890E0;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            color: #FFFFFF;
+            margin-top:4rem;
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <img src="img/booking-success1.png" alt="">
+    <h3>房间预订成功！</h3>
+    <button class="view-order" type="button">查看订单</button>
+</div>
+
+</body>
+<script src="js/jquery-1.11.3.js"></script>
+<script>
+    var url2=location.href;
+    var paramPhone2=url2.slice(url2.indexOf("=")+1,url2.length);
+    $(".view-order").on("click",function(){
+        //跳转到我的订单页面
+        location.href="my-order.html?phone="+paramPhone2;
+    });
+</script>
+</html>

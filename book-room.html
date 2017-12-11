@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>酒店名称</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <script src="js/common.js"></script>
+    <script src="js/url.js"></script>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/book-room.css">
+    <link rel="stylesheet" href="date/date.css">
+</head>
+<body>
+<div class="wrapper">
+    <!--预定房型与时间-->
+    <div class="book-room-type">
+        <img src="img/room-type-icon.png" alt="">
+        <span class="book-room-type-name"></span>
+        <!--住店时间-->
+        <div class="select-time">
+            <div class="checkin-time left">
+                入住：
+                <span id="entertime"></span>
+                <span class="entertime none"></span>
+                <input type="text" class="input-enter none">
+                <a></a>
+            </div>
+            <div class="checkout-time left">
+                离店：
+                <span id="leavetime"></span>
+                <span class="leavetime none"></span>
+                <input type="text" class="input-leave none">
+                <a></a>
+            </div>
+            <div class="night right" style="display:none"></div>
+            <div class="alter-book-time">修改<span></span></div>
+        </div>
+    </div>
+    <!--房间数-->
+    <div class="book-info room-num">
+        房间数 <span>1间</span>  <a></a>
+    </div>
+    <!--房间数提示框-->
+    <div class="room-num-notes-box" style="display:none">
+        <div>
+            <h3>提示</h3>
+            <p>此类型房间只能本人入住</p>
+            <p class="room-num-notes">我知道了</p>
+        </div>
+    </div>
+    <!--入住人-->
+    <div class="book-info">
+        入住人 <input class="book-guset" type="text" placeholder="姓名，每间只需填写1人">
+    </div>
+    <!--手机号-->
+    <div class="book-info">
+        手机号 <input class="book-tel" type="text" placeholder="用于接收通知">
+    </div>
+    <!--备注-->
+    <div class="book-info">
+        备注 <input class="book-remark" type="text">
+    </div>
+    <!--支付方式-->
+    <div class="apply-way">
+        <p>支付方式</p>
+        <!--<div class="apply-way-list">
+            <img src="img/wechat.png" alt="">
+            <div class="apply-ways">
+                <p id="wx_wap" class="ap-way">微信支付</p>
+                <p>推荐使用，支付后将为您保留房间</p>
+            </div>
+            <span class="btn-apply"></span>
+        </div>-->
+        <div class="apply-way-list">
+            <img src="img/alipay.png" alt="">
+            <div class="apply-ways">
+                <div id="alipay_wap" class="ap-way">支付宝支付</div>
+            </div>
+            <span class="btn-apply apply-click"></span>
+        </div>
+        <!--<div class="apply-way-list">
+            <img src="img/card.png" alt="">
+            <div class="apply-ways ">
+                <div id="upacp_wap" class="ap-way">银联支付</div>
+            </div>
+            <span class="btn-apply"></span>
+        </div>-->
+    </div>
+    <!--预定须知-->
+    <div class="book-notes">
+        <p>预订须知</p>
+        <p>若超过预定时间未入住，订单将被自动取消。</p>
+    </div>
+    <div class="apply">
+        <!--订单金额-->
+        <div class="book-price left"></div>
+        <!--去支付-->
+        <div class="go-apply right">去支付</div>
+    </div>
+
+    <!--输入信息错误提示框-->
+    <div class="phone-note-box" style="display:none">
+        <div></div>
+    </div>
+    <!--已满房提示框-->
+    <div class="full-room-box" style="display:none">
+        <div></div>
+    </div>
+
+
+</div>
+</body>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="date/date.js"></script>
+<script>
+    $('.alter-book-time').hotelDate();
+</script>
+<script src="js/book-room.js"></script>
+
+
+
+
+</html>
+
+

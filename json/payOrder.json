@@ -1,0 +1,8 @@
+{
+  "resultId": 1,
+  "resultMsg": "成功",
+  "status": "success",
+  "data": {
+    "form": "\u003cform name\u003d\"punchout_form\" method\u003d\"post\" action\u003d\"https://openapi.alipaydev.com/gateway.do?charset\u003dutf-8\u0026method\u003dalipay.trade.wap.pay\u0026sign\u003dPv%2B1Qc7LRm14HXgDqOb3jWOpJrqVqGzzlwW7gBx28Gqb48XYgatZK2Cmrdw5CaKJMCDaD5D10zZMLkKpVFJ1TKbHnd%2FB8rxfgb3qH6ENdvSYPF9qKCEf%2Bb9dqYPfsYJzwCBSHueuzB%2BUUAFKYBzlQ2c5H%2FfJnvYQvOSb0VKOSp5GiioySbEFKa0CGysAv%2FPKMQ7YjibmSA3RvitmmiUVa5wCdvGAuStwqSVHvV2%2FpCr59lPhk%2BdvN3dLVU3QagAqPmkKcJB1jA6lD2fU1DeK%2B7ubV2YutxjM9MBdxI7QmC7%2Fgtr%2BXz4K%2BjTBilebTRzzN9SXYyrgw%2Fk0a4XgfIrIDA%3D%3D\u0026notify_url\u003dhttp%3A%2F%2Fhotel.moorgen.top%3A8084%2Forder%2Fwechat%2Falipay%2FpayResult\u0026version\u003d1.0\u0026app_id\u003d2016082100304055\u0026sign_type\u003dRSA2\u0026timestamp\u003d2017-12-07+14%3A22%3A37\u0026alipay_sdk\u003dalipay-sdk-java-dynamicVersionNo\u0026format\u003djson\"\u003e\n\u003cinput type\u003d\"hidden\" name\u003d\"biz_content\" value\u003d\"{\u0026quot;out_trade_no\u0026quot;:\u0026quot;2017112911258\u0026quot;,\u0026quot;total_amount\u0026quot;:\u0026quot;2\u0026quot;,\u0026quot;subject\u0026quot;:\u0026quot;单间\u0026quot;,\u0026quot;timeout_express\u0026quot;:\u0026quot;5m\u0026quot;,\u0026quot;product_code\u0026quot;:\u0026quot;QUICK_WAP_PAY\u0026quot;}\"\u003e\n\u003cinput type\u003d\"submit\" value\u003d\"立即支付\" style\u003d\"display:none\" \u003e\n\u003c/form\u003e\n"
+  }
+}

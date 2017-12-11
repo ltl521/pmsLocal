@@ -1,0 +1,472 @@
+/*轮播图片*/
+.hotel-pic-box{
+    width:100%;
+}
+.swiper-container {
+    width: 100%;
+    height: 11.11111111111111rem;
+    margin: 0px auto;
+    position:relative;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 0.8rem;
+    background: #fff;
+}
+.swiper-slide>img{
+    width:100%;
+    height:100%;
+}
+/*轮播图片数量*/
+.pic-num{
+    position:absolute;
+    bottom:0.2222222222222222rem;
+    right:0.4rem;
+    z-index:1000;
+    width:2.2222222222222223rem;
+    height:0.8888888888888888rem;
+    opacity: 0.3;
+    background: #000;
+    border-radius: 45px;
+    text-align:center;
+    padding-top:0.08888888888888889rem;
+}
+/*酒店地址*/
+.hotel-map{
+    width:100%;
+    height:2.2222222222222223rem;
+    border-bottom: 1px solid #353535;
+    padding:0 0.8888888888888888rem;
+    background:#151515;
+}
+.map-icon{
+    height:2.2222222222222223rem;
+    line-height:2.2222222222222223rem;
+    cursor:pointer;
+    max-width:86%;
+}
+.map-icon>span{
+    float:left;
+    width:0.6222222222222222rem;
+    height:0.8rem;
+    background:url(../img/map-icon.png) no-repeat center;
+    background-size:100%;
+    margin-top:0.6666666666666666rem;
+    margin-right:0.17777777777777778rem;
+}
+.map-icon>a{
+    float:left;
+    max-width:90%;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    font-size: 0.6222222222222222rem;
+    color: #DBDBDB;
+}
+#map{
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background:#fff;
+    z-index:9999;
+}
+.phone-icon {
+    width: 0.8888888888888888rem;
+    height: 2.2222222222222223rem;
+    line-height:2.2222222222222223rem;
+    background: url(../img/phone-icon.png) no-repeat center;
+    background-size:100%;
+    cursor:pointer;
+}
+
+/*酒店介绍*/
+.hotel-info-box{
+    width:100%;
+    height:2.6666666666666665rem;
+    cursor:pointer;
+    padding:0 0.8888888888888888rem 0 0.6666666666666666rem;
+    background:#151515;
+}
+.hotel-info{
+    width:70%;
+    height:2.6666666666666665rem;
+    padding-top:0.4444444444444444rem;
+}
+.hotel-info-name{
+    width:100%;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow: ellipsis;
+}
+.hotel-info>p{
+    font-size: 0.4444444444444444rem;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    margin-top:0.2222222222222222rem;
+}
+.hotel-info-box>div:nth-child(2){
+    float:right;
+    height:2.6666666666666665rem;
+    line-height:2.6666666666666665rem;
+    color: #606060;
+}
+.hotel-info-box>div:nth-child(2)>span{
+    display:inline-block;
+    width:0.26666666666666666rem;
+    height:0.35555555555555557rem;
+    background:url(../img/detail.png) no-repeat center;
+    background-size: 100%;
+}
+
+
+/*酒店房型介绍*/
+.room-type-box{
+    width:100%;
+    background: #000000;
+    padding-top:0.6666666666666666rem;
+    padding-bottom:1.3333333333333333rem;
+}
+.room-type-box>div{
+    width:95%;
+    margin-left:auto;
+    margin-right:auto;
+}
+/*入住时间*/
+.room-type-box>div:nth-child(1){
+    height:1.7777777777777777rem;
+    line-height:1.7777777777777777rem;
+}
+.checkin-time,.checkout-time{
+    width:5.111111111111111rem;
+    margin-right:0.8888888888888888rem;
+    font-size: 0.4444444444444444rem;
+    color: #606060;
+    cursor:pointer;
+}
+.checkin-time>span,.checkout-time>span{
+    width:2.311111111111111rem;
+    margin:0 0.2222222222222222rem;
+    font-size: 0.6222222222222222rem;
+    color: #DBDBDB;
+    text-align:center;
+}
+.checkin-time>a,.checkout-time>a{
+    display:inline-block;
+    width:0.35555555555555557rem;
+    height:0.4rem;
+    background: url(../img/drop.png) no-repeat center;
+    background-size: 100%;
+    margin-top:-0.5rem;
+}
+.night{
+    /*width:1.7777777777777777rem;*/
+    text-align:center;
+    margin-right:0.4444444444444444rem;
+}
+/*房型展示*/
+.room-type{
+    height:5.644444444444445rem;
+    margin-bottom:0.4444444444444444rem;
+    background: #151515;
+    border-radius: 12px;
+    box-shadow: 0 0.08888888888888889rem 0.3111111111111111rem 0 rgba(0,0,0,0.31);
+    text-align:center;
+}
+/*房型信息*/
+.room-type-info{
+    width:75%;
+    height:4.8rem;
+    line-height:4.8rem;
+    padding-left:0.2222222222222222rem;
+    margin-top:0.8444444444444444rem;
+}
+.room-type-info>img,.room-type-info>div{
+    float:left;
+    width:50%;
+    height:3.9555555555555557rem;
+    cursor:pointer;
+}
+.room-type-info>div{
+    padding-left:0.6666666666666666rem;
+    text-align: left;
+}
+.room-type-name{
+    width:100%;
+    height:1.1111111111111112rem;
+    line-height:1.1111111111111112rem;
+    margin-top:0.08888888888888889rem;
+}
+.room-type-name>a{
+    float:left;
+    max-width:85%;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    font-size: 0.8rem;
+    color: #fff;
+    font-weight: normal;
+}
+
+.room-type-name>span{
+    display: inline-block;
+    width:0.26666666666666666rem;
+    height:0.35555555555555557rem;
+    background:url(../img/detail.png) no-repeat;
+    background-size: 100%;
+    margin-left:0.3111111111111111rem;
+    margin-bottom:0.08888888888888889rem;
+}
+.breakfast{
+    width:100%;
+    height:0.8rem;
+    line-height:1.1111111111111112rem;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow: ellipsis;
+}
+.room-serv1,.room-serv2{
+    width:100%;
+    margin-top:0.2rem;
+    height:0.7555555555555555rem;
+    white-space:nowrap;
+    overflow:hidden;
+
+}
+.room-serv1>li,.room-serv2>li{
+    float:left;
+    margin-right:0.35555555555555557rem;
+    line-height:0.7555555555555555rem;
+    font-size: 0.5333333333333333rem;
+    color: #606060;
+}
+/*价格&预定*/
+.room-type-book{
+    width:25%;
+    height:4.8rem;
+    margin-top:0.8444444444444444rem;
+}
+.room-price{
+    width:100%;
+}
+.room-price>h3{
+    height:1.3333333333333333rem;
+    line-height:1.3333333333333333rem;
+    font-size: 0.9777777777777777rem;
+    color: #EA4D23;
+    font-weight: normal;
+}
+.room-price>h5{
+    height:0.7555555555555555rem;
+    line-height:0.7555555555555555rem;
+    text-decoration: line-through;
+    font-weight: normal;
+}
+/*预定按钮*/
+.room-type-book>button{
+    width:3.111111111111111rem;
+    height:1.4222222222222223rem;
+    border-radius: 4px;
+    color:#fff;
+    font-size: 0.6222222222222222rem;
+    margin-top:0.4444444444444444rem;
+}
+.room-type-book>button.book-btn{
+    background: #2890E0;
+}
+.room-type-book>button.full-btn{
+    background: #606060;
+    opacity: 0.5;
+}
+
+
+
+/*房型信息弹框*/
+.room-detail-box{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index:3000;
+    background:rgba(0,0,0,.6);
+    overflow:hidden;
+}
+.room-detail{
+    width:13.555555555555555rem;
+    height:18.22222222222222rem;
+    background: #fff;
+    position:absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    padding-bottom:2.2222222222222223rem;
+}
+.scroll-padding{
+    padding-top:1.7777777777777777rem;
+}
+.room-detail>div:nth-child(3){
+    height:16rem;
+    overflow:auto;
+    border-bottom:1px solid #ddd;
+    position:relative;
+}
+
+/*房型名称*/
+.room-detail-type-name{
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;
+    height:1.7777777777777777rem;
+    line-height:1.7777777777777777rem;
+    font-size: 0.6222222222222222rem;
+    color: #232323;
+    padding-left:0.4444444444444444rem;
+    background: #fff;
+    z-index: 99999999999999;
+}
+/*轮播图高度*/
+.room-detail .swiper-container{
+    height:7.688888888888889rem;
+}
+
+/*图片计数*/
+.swiper-pagination{
+    text-align:right;
+    padding-right:1rem;
+    color:#DBDBDB;
+}
+
+/*房间介绍*/
+.room-intro{
+    width:12.444444444444445rem;
+    margin:0 auto;
+    border-bottom:1px solid #ddd;
+    padding:0.35555555555555557rem 0;
+}
+.room-intro-row{
+    width:100%;
+    overflow:hidden;
+}
+.room-intro-row>div{
+    float:left;
+    border-right:1px solid #ddd;
+    padding:0 0.2222222222222222rem;
+    margin:0.13333333333333333rem 0;
+    color: #606060;
+    letter-spacing: 0.01911111111111111rem;
+}
+.room-intro-row>div:last-child{
+    border-right:none;
+}
+
+/*房间标签*/
+.room-label{
+    width:12.444444444444445rem;
+    margin:0 auto;
+    border-bottom:1px solid #ddd;
+    overflow:hidden;
+    padding:0.4444444444444444rem;
+}
+.room-label>li{
+    float:left;
+    width:2.933333333333333rem;
+    height:0.8888888888888888rem;
+    line-height:0.8888888888888888rem;
+    text-align:center;
+    border-radius: 2px;
+    margin-right:0.4444444444444444rem;
+    margin-bottom:0.2222222222222222rem;
+    color:#fff;
+    background:#ccc;
+}
+.room-label>li:nth-child(1),.room-label>li:nth-child(4){
+    background: #EA4D23;
+}
+.room-label>li:nth-child(2),.room-label>li:nth-child(5){
+    background: #85B322;
+}
+.room-label>li:nth-child(3){
+    background:  #F2B011;
+}
+
+.room-label>li.label-red{
+    background: #EA4D23;
+}
+.room-label>li.label-green{
+    background: #85B322;
+}
+.room-label>li.label-yellow{
+    background: #F2B011;
+}
+
+/*房间描述*/
+.room-description{
+    width:12.444444444444445rem;
+    margin:0 auto;
+    border-bottom:1px solid #ddd;
+    padding-bottom:0.8rem;
+}
+.room-cancel-rule{
+    border-bottom:none;
+}
+.room-description>h4{
+    height:1.7777777777777777rem;
+    line-height:1.7777777777777777rem;
+    font-size: 0.6222222222222222rem;
+    color: #232323;
+    letter-spacing: 0.022222222222222223rem;
+}
+.room-description>p{
+    color: #606060;
+    letter-spacing: 0.01911111111111111rem;
+    line-height: 0.8888888888888888rem;
+}
+/*取消&预定按钮*/
+.room-detail-btn{
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    background:#fff;
+    text-align:center;
+    border-top:1px solid #ddd;
+}
+.room-detail-cancel,.room-detail-sure{
+    width:50%;
+    height:2.2222222222222223rem;
+    line-height:2.2222222222222223rem;
+}
+.room-detail-cancel{
+    border-right:1px solid #ddd;
+}
+
+.room-detail-cancel>button,.room-detail-sure>button{
+    width:3.111111111111111rem;
+    height:1.4222222222222223rem;
+    line-height:1.4222222222222223rem;
+    background: #2890E0;
+    border-radius: 4px;
+    font-size: 0.6222222222222222rem;
+    color: #fff;
+}
+
+.room-detail-cancel>button{
+    font-size: 0.8rem;
+    color: #006ABC;
+    letter-spacing: 0.028444444444444446rem;
+    background: #fff;
+}
+.room-detail-sure>button.toggleNo{
+    background: #606060;
+}
+
+
+

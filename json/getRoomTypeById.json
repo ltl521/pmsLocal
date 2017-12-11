@@ -1,0 +1,57 @@
+{
+  "resultId": 1,
+  "resultMsg": "成功",
+  "status": "success",
+  "data": {
+    "roomType": {
+      "roomtypeId": "48",
+      "roomtypeName": "SD",
+      "roomService": "4,5",
+      "price": "888",
+      "realPrice": "85",
+      "detail": "好房间不等人",
+      "thumbnail": "a73847b6e00d4e0bb2421ab318970505.jpg",
+      "picturePath": "a73847b6e00d4e0bb2421ab318970505.jpg,a73847b6e00d4e0bb2421ab318970505.jpg",
+      "cancelRule": "入住前2小时后取消，收取2%手续费，其余时间取消不收取手续费",
+      "services": [
+        {
+          "id": 5,
+          "serviceName": "电动窗帘",
+          "serviceType": 1,
+          "icon": "curtain",
+          "hasService": false
+        },
+        {
+          "id": 4,
+          "serviceName": "独立卫浴",
+          "serviceType": 1,
+          "icon": "bathroom",
+          "hasService": false
+        }
+      ],
+      "breakfast": 2,
+      "roomSize": "55",
+      "bedType": "1.8大床",
+      "bedCount": 1,
+      "hasWindows": 1,
+      "floor": "1-3层",
+      "direction": "东",
+      "hasSmoke": "1",
+      "note": "不能带宠物",
+      "isShow": 1,
+      "hasRoom": true,
+      "roomParams": [
+        "55㎡",
+        "1.8大床",
+        "1张床",
+        "有窗",
+        "1-3层",
+        "朝东",
+        "不可吸烟"
+      ],
+      "from": 1,
+      "duration": 2,
+      "charge": 2
+    }
+  }
+}

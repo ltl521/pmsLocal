@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>订单详情</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="format-detection" content="telephone=yes"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <script src="js/common.js"></script>
+    <script src="js/url.js"></script>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/order-detail.css">
+</head>
+<body>
+<div class="wrapper">
+    <!--预定订单状态-->
+    <div>
+        <h3 class="left order-status"></h3>
+        <h3 class="right order-price"></h3>
+        <div class="order-num">
+           <span>订单编号：</span>
+            <span class="order-id"></span>
+        </div>
+        <div class="money-back" style="display:none">钱款将在7个工作日内原路返还</div>
+    </div>
+    <!--房型&住店时间-->
+    <div>
+        <h3 class="order-room-name"></h3>
+        <p><span class="order-live-time"></span> 入住</p>
+        <p><span class="order-leave-time"></span> 退房</p>
+    </div>
+    <!--预定信息-->
+    <div class="clear-float">
+        <p>预订信息</p>
+        <div>
+            <p class="book-guest-name"></p>
+            <p>手机号：<span class="order-phone"></span></p>
+            <span>备注：</span>
+            <span class="order-remark"></span>
+        </div>
+    </div>
+
+    <a class="call-hotel-btn">联系酒店</a>
+    <button class="cancel-order-btn" type="button">取消订单</button>
+    <button class="again-order-btn" type="button" style="display:none">重新预订</button>
+
+
+    <!--取消订单弹框-->
+    <div class="cancel-order-box" style="display:none">
+        <div>
+            <div>
+                <h4>提示</h4>
+                <p>确定取消订单？</p>
+            </div>
+            <div>
+                <p class="cancel-order-cancel">取消</p>
+            </div>
+            <div>
+                <p class="cancel-order-sure">确定</p>
+            </div>
+        </div>
+    </div>
+    <!--订单已取消-->
+    <div class="order-canceled-box" style="display:none">
+        <div>
+            <h3>订单已取消！</h3>
+            <p>钱款将在7个工作日内原路返还</p>
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/order-detail.js"></script>
+</html>
