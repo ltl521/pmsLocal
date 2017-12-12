@@ -1,6 +1,24 @@
 /**
  * Created by 22682 on 2017/10/11.
  */
+if(sessionStorage.getItem("h")){
+    $("body").scrollTop(sessionStorage.getItem("h")+"px");
+    var id=sessionStorage.getItem("id");
+    if(id=="stayorder"){
+        $("#stayorder").addClass("selected");
+        $("#stay-in-orders").addClass("show");
+        $("#allorder").removeClass("selected");
+        $("#total-orders").removeClass("show");
+    }else{
+        $("#stayorder").removeClass("selected");
+        $("#stay-in-orders").removeClass("show");
+        $("#allorder").addClass("selected");
+        $("#total-orders").addClass("show");
+    }
+}
+
+
+
 //待入住&全部切换
 var tabs=$(".order-tab-head>div>p");
 var contents=$(".order-tab-content>div");
@@ -20,6 +38,9 @@ function changeTab(index) {
 //查看订单详情
 function  jumpDetail(a){
     localStorage.setItem("orderNo",$(a).find(".orderNo").html());
+    var h=$(window).scrollTop();
+    sessionStorage.setItem("h",h);
+    sessionStorage.setItem("id",$(".selected").attr("id"));
     location.href="order-detail.html";
 }
 
