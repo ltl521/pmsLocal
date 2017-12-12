@@ -1,7 +1,7 @@
 /**
  * Created by 22682 on 2017/10/11.
  */
-$.ajax({
+/*$.ajax({
     type:"post",
     url:"json/getOrderById.json",
     data:{"orderNo":localStorage.getItem("orderNo")},
@@ -36,7 +36,7 @@ $.ajax({
             $(".order-remark").html(result.data.order.remark);
         }
     }
-});
+});*/
 
 
 //联系酒店
